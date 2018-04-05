@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="invest.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid" style="padding-top:20px">
+
+      <h1 class="text-danger" style="text-align:center;">Investment Calculation Form</h1>
+
+</div>
+
+
+<div class="row px">
+  <div class="col-md-4 col-lg-4 col-sm-12">
+    
+  </div>
+  <div class="col-md-4 col-lg-4 col-sm-12">
+    <div class="card">
+      <div class="card-body">
+        
+          <div class="row ">
+          <div class="col-md-12 col-lg-12 col-sm-12">
+              <h3 class="card-title">How has the fund Performed??</h3>
+          </div>
+          </div>
+          <div class="row">
+             <div class="col-md-6 col-lg-6 col-sm-6">
+              <h5 style="padding-top:5px">If you had invested</h5>
+             </div>
+             <div class="col-md-6 col-lg-6 col-sm-6">
+              <input type="number" class="form-control" placeholder="Enter Amount..."  id="invested_amount">
+             </div> 
+          </div>
+
+          <div class="row drop">
+             <div class="col-md-6 col-lg-6 col-sm-6">
+              <h6 style="padding-top:5px">Every Month in past</h6>
+             </div>
+             <div class="col-md-6 col-lg-6 col-sm-6">
+                  <select class="custom-select" id="years" title="Years">
+                    <option value="1">One year Ago</option>
+                    <option value="2">Two years Ago</option>
+                    <option value="3">Three years Ago</option>
+                    <option value="4">Four years Ago</option>
+                    <option value="5">Five years Ago</option>
+                    <option value="6">Six years Ago</option>
+                    <option value="7">Seven years Ago</option>
+                    <option value="8">Eight years Ago</option>
+                    <option value="9">Nine years Ago</option>
+                    <option value="10">Ten years Ago</option>
+                  </select>
+             </div> 
+          </div>
+
+          <div class="container" id="datashow">
+              <div class="row test">
+                 <div class="col-md-12 col-lg-12 col-sm-12">
+                  <h6 style="padding-top:5px; text-align:center;">You would Now have</h6>
+                  <h5 style="padding-top:5px; text-align:center;" id="end"></h5>
+                  <h6 style="padding-top:5px; text-align:center;">calculated at 21.7% annaual Returns</h6>
+                 </div>
+                 
+              </div>
+              <div class="row ">
+                 <div class="col-md-6 col-lg-6 col-sm-6 drop">
+                  <img src="img/image1.jpg" class="rounded" alt="Cinque Terre" id="image1" width="70%" style="margin-left: 25px;margin-top: 50px;">
+                  <h6 style="text-align:center;">Invested</h6>
+                  <h5 style="text-align:center;" id="start"></h5>
+                 </div>
+                 <div class="col-md-6 col-lg-6 col-sm-6">
+                      <img src="img/images2.png" class="rounded" alt="Cinque Terre" id="image2" width="60%" style="margin-left: 30px;">
+                  <h6 style="text-align:center;">Recieved</h6>
+                  <h5 style="text-align:center;" id="end_value"></h5>
+                 </div> 
+              </div>
+          </div>
+              <div class="row ">
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                  <button type="button" class="btn btn-success btn-block" onclick="investment_logic();">Invest Now</button>
+                </div>
+              </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-4 col-sm-12">
+    
+  </div>
+</div>
+
+<script src="investment.js"></script>
+</body>
+</html>
